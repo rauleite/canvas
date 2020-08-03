@@ -1,0 +1,9 @@
+{
+  "packages": [
+    "packages/*"
+  ],
+  "bootstrap": {
+    "npmClient": "yarn"
+  },
+  "version": "0.0.1"
+}
