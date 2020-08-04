@@ -4,3 +4,6 @@
 [submodule "packages/utils"]
 	path = packages/utils
 	url = https://github.com/rauleite/utils.git
+[submodule "packages/ssr"]
+	path = packages/ssr
+	url = https://github.com/rauleite/ssr.git
