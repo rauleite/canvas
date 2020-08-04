@@ -1,6 +1,0 @@
-34 error Error: Command failed: git add -- packages/utils/package.json packages/log/package.json packages/ssr/package.json packages/ssr/package-lock.json lerna.json
-34 error fatal: Pathspec 'packages/log/package.json' is in submodule 'packages/log'
-34 error
-34 error     at makeError (/home/raul/.config/yarn/global/node_modules/execa/index.js:174:9)
-34 error     at /home/raul/.config/yarn/global/node_modules/execa/index.js:278:16
-34 error     at processTicksAndRejections (internal/process/task_queues.js:93:5)
