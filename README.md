@@ -89,8 +89,8 @@ git submodule add https://github.com/rauleite/cli.git ./packages/cli
 
 ```sh
 # Link dependencies, example:
-lerna add @rauljs/log --scope=@rauljs/ssr
-lerna add @rauljs/log --scope=@rauljs/cli
+lerna add @luar/log --scope=@luar/ssr
+lerna add @luar/log --scope=@luar/cli
 ```
 
 ```sh

@@ -1,6 +1,6 @@
 {
   "name": "canvas",
-  "private": true,
+  "private": false,
   "devDependencies": {
     "lerna": "^3.22.1"
   },
