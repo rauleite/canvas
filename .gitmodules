@@ -7,3 +7,6 @@
 [submodule "packages/ssr"]
 	path = packages/ssr
 	url = https://github.com/rauleite/ssr.git
+[submodule "packages/cli"]
+	path = packages/cli
+	url = https://github.com/rauleite/cli.git
