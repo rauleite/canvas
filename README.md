@@ -69,6 +69,9 @@ cd rootProj
 cat .gitmodules
 ```
 
+tem que ter arquivo aqui
+.git/modules/packages/<submodule> **<–**
+
 ```sh
 # for a new submodule (just created)
 # add submodule to rootProj/.git/config (example)
