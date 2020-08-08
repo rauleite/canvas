@@ -1,7 +1,11 @@
 {
-  "packages": ["packages/*"],
+  "packages": [
+    "packages/*"
+  ],
   "npmClient": "yarn",
-  "bootstrap": {"npmClient": "yarn"},
+  "bootstrap": {
+    "npmClient": "yarn"
+  },
   "version": "independent",
-  "useWorkspaces": true
+  "useWorkspaces": false
 }

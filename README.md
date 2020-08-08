@@ -60,37 +60,50 @@ git clone --recurse-submodules https://github.com/rauleite/canvas
 git submodule add https://github.com/rauleite/ssr.git ./packages/ssr
 # or
 git submodule update --init --recursive
+# test if is all ok
+# Should be show the all submodules:
+cd rootProj
+cat ./git/config
+# and:
+cd rootProj
+cat .gitmodules
+```
+
+```sh
+# for a new submodule (just created)
+# add submodule to rootProj/.git/config (example)
+git submodule add https://github.com/rauleite/cli.git ./packages/cli
 ```
 
 ```sh
 # on every directory: root and submodules
 cd submodule
 git add .
-# commit and push
+# commit and push...
 
 cd submodule2
 # ...
 cd rootProj
 git add .
-# commit and push
+# commit and push...
 ```
 
 ### Lerna
 
 - Usado para manter compatibilidade com npm, caso necessário.
-- Configurado para utilização com *yarn workspaces*.
+- Configurado para utilização com *yarn workspaces*. **Ou talvez não.**
+- Lerna Getting Started (some commands): [https://lerna.js.org/](lerna.js.org)
 
 #### Lerna Example
 
-```sh
-# add submodule to rootProj/.git/config (example)
-git submodule add https://github.com/rauleite/cli.git ./packages/cli
-```
+<!-- # ADDING PACKAGES
+# Most simple and prefered method -->
 
 ```sh
 # Link dependencies, example:
 lerna add @luar/log --scope=@luar/ssr
-lerna add @luar/log --scope=@luar/cli
+# OR devDependencies
+lerna add @luar/log --scope=@luar/ssr --dev
 ```
 
 ```sh
@@ -99,6 +112,13 @@ lerna add @luar/log --scope=@luar/cli
 cd rootProj
 lerna publish --no-git-tag-version --no-push
 ```
+
+## Explanations and solutions
+
+### Opção de não usar *yarn workspaces*
+
+- Exige *private package*
+- Não faz diferença usá-lo
 
 - [Canvas Project](#canvas-project)
   - [Submodulos](#submodulos)
@@ -111,3 +131,5 @@ lerna publish --no-git-tag-version --no-push
       - [Git Example](#git-example)
     - [Lerna](#lerna)
       - [Lerna Example](#lerna-example)
+  - [Explanations and solutions](#explanations-and-solutions)
+    - [Opção de não usar *yarn workspaces*](#opção-de-não-usar-yarn-workspaces)
