@@ -1,0 +1,9 @@
+{
+  "name": "@luar/log",
+  "version": "0.0.1",
+  "main": "index.js",
+  "private": false,
+  "author": "Raul Leite",
+  "license": "MIT",
+  "dependencies": {}
+}
