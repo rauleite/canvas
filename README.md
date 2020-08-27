@@ -52,7 +52,7 @@ npm config set access public
 #### Git Example
 
 ```sh
-https://git-scm.com/book/en/v2/Git-Tools-Submodules
+# https://git-scm.com/book/en/v2/Git-Tools-Submodules
 # on of this commands for STARTUP an existent or CREATE a new submodule
 # to get repo with all submodules
 git clone --recurse-submodules https://github.com/rauleite/canvas
@@ -69,7 +69,7 @@ cd rootProj
 cat .gitmodules
 ```
 
-tem que ter arquivo aqui
+Tem que ter arquivo aqui
 .git/modules/packages/<submodule> **<–**
 
 ```sh
@@ -104,9 +104,9 @@ git add .
 
 ```sh
 # Link dependencies, example:
-lerna add @luar/log --scope=@luar/ssr
+lerna add @luar/utils --scope=@luar/ssr
 # OR devDependencies
-lerna add @luar/log --scope=@luar/ssr --dev
+lerna add @luar/utils --scope=@luar/ssr --dev
 ```
 
 ```sh
